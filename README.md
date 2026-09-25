@@ -217,6 +217,14 @@ Every push to `main` runs the full test suite against **Python 3.10, 3.11, and 3
 
 ---
 
+## Windows note
+
+After installing, if `skycast` is not recognised as a command, run this once
+in PowerShell to add Python's scripts folder to your PATH permanently:
+
+```powershell
+[System.Environment]::SetEnvironmentVariable("PATH", $env:PATH + ";C:\Users\$env:USERNAME\AppData\Roaming\Python\Python314\Scripts", "User")
+
 ## Requirements
 
 - Python 3.10 or newer
