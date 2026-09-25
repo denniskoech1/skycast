@@ -4,7 +4,6 @@ import pytest
 
 from skycast.api.geocoding import search_city
 from skycast.api.weather import get_current_weather, get_forecast
-from skycast.models.weather import Location
 
 
 def test_search_city_returns_correct_location():
